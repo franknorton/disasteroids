@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Scripts/Mirrored.gd" type="Script" id=1]
+
+[node name="Asteroid" type="RigidBody2D"]
+mass = 56.15
+script = ExtResource( 1 )
+clone_scene_name = "Scenes/Asteroid_Big_1.tscn"
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+position = Vector2( -123, -18 )
+scale = Vector2( 1.70066, 1.73162 )
+polygon = PoolVector2Array( 28.6482, -0.100006, 46.8764, -20.3123, 83.9209, -19.7348, 108.029, 6.25244, 83.3329, 50.142, 58.0485, 51.297, 49.2284, 15.4924 )

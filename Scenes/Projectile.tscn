@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Scripts/MirroredProjectile.gd" type="Script" id=1]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 4, 1 )
+
+[node name="Projectile" type="RigidBody2D"]
+contacts_reported = 1
+contact_monitor = true
+script = ExtResource( 1 )
+clone_scene_name = "Scenes/Projectile.tscn"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource( 1 )
